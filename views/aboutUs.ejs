@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <!-- <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/aboutUs.css">
+    <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+
+
+  </head> -->
+  <% include ./include/head %>
+  <title>About Us</title>
+  <link rel="stylesheet" href="/stylesheets/aboutUs.css">
+  <body>
+    <nav>
+      <div class="toggle">
+          <i class="fa fa-bars menu" aria-hidden="true"></i>
+      </div>
+      <div class ="menu-bar">
+          <ul>
+              <li class ="active"> <a href ="/"><i class="fa fa-home">Home</i> </a> </li>
+              <li><a href ="aboutUs"><i class="fa fa-user"></i>AboutUs</a></li>
+              <li><a href ="ourTeam">ourTeam</a> </li>
+              <li><a href ="contactUs"><i class="fa fa-phone"></i>contactUs</a></li>
+          </ul>
+      </div>
+  </nav>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script type ="text/javascript">
+ $(document).ready(function(){
+ $('.menu').click(function(){
+ $('ul').toggleClass('active');
+ })
+ })
+ </script>
+      <div class="about-section">
+        <div class="inner-width">
+          <h1>About Us</h1>
+          <div class="border"></div>
+          <div class="about-section-row">
+            <div class="about-section-col">
+              <div class="about">
+                <p>
+                  E learning hub is a online learning plateform where you are able to read and download books .
+                   Basically this site is designed to resolve the problem of PDF books of BookReaders and BookLovers
+                   continously We are work hard to avaliable more and more books .
+                   Please give your valueable feedback to us so that we are able to give you better service. 
+                </p>
+                <!-- <a href="#">Read More</a> -->
+              </div>
+            </div>
+            <div class="about-section-col">
+              <div class="skills">
+                <div class="skill">
+                  <div class="title">Web Design</div>
+                  <div class="progress">
+                    <div class="progress-bar p1"><span>90%</span></div>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="title">UI Design</div>
+                  <div class="progress">
+                    <div class="progress-bar p2"><span>70%</span></div>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="title">UX Design</div>
+                  <div class="progress">
+                    <div class="progress-bar p3"><span>50%</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

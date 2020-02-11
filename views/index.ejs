@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <% include ./include/head %>
+    <link rel="stylesheet" href='/stylesheets/searchStyle.css' />
+<body>
+    <% include ./include/nav %>
+    <div class="bookStore">
+        <% if(result.length > 0){ %>
+            <ol  class="bookUl" type="1" start="1">
+                <% result.forEach((item)=>{%>
+                    <form action="/download" enctype="multipart/form-data" method="GET" class="downloadContent" >
+                        <li class="bookList" >  <%= item.name %> <%= item.edition %> <%= item.publicationYear %> <%= item.writterName %></li> 
+                        <button class="downloadBtn" name=<%=item.name %>-<%=item.writterName %><%=item.id %> >  Download </button>
+                    </form>
+                <% }) %>
+            </ol>
+        <% } else{ %>  
+            <h5>result not found....</h5>
+        <% } %>
+    </div>
+</body>
+</html>

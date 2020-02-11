@@ -1,0 +1,36 @@
+<nav>
+    <div class="toggle">
+        <i class="fa fa-bars menu" aria-hidden="true"></i>
+    </div>
+    <div class ="menu-bar">
+        <ul>
+            <li class ="active"> <a href ="/"><i class="fa fa-home">Home</i> </a> </li>
+            <li><a href ="aboutUs"><i class="fa fa-user"></i>AboutUs</a></li>
+            <li><a href ="ourTeam">ourTeam</a> </li>
+            <li><a href ="contactUs"><i class="fa fa-phone"></i>contactUs</a></li>
+        </ul>
+    </div>
+</nav>
+<marquee width="100%" direction="left" height="30px" style="color: brown;"> 
+<h5>Please give your valuable suggestions to us in contact us section so that we are able to give you best service.</h5>
+</marquee>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script type ="text/javascript">
+ $(document).ready(function(){
+ $('.menu').click(function(){
+ $('ul').toggleClass('active');
+ })
+ })
+ </script>
+ <div class ="container">
+    <form action="/search" enctype="multipart/form-data" method="GET">
+        <div class="input-group">
+            <input type="text" class="form-control" name="box" placeholder="Search...." >
+        <div class ="input-group-btn">
+            <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+            <!-- <a href="search"><i class="fa fa-search"></i></a> -->
+        </div>
+    </div>
+    </form>
+ </div>
+

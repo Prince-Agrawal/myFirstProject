@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <head>
+	<meta charset="UTF-8">
+	<title>Our Team Section</title>
+	<link rel="stylesheet" href="/stylesheets/ourTeam.css">
+</head> -->
+<% include ./include/head %>
+<title>Our Team</title>
+<link rel="stylesheet" href="/stylesheets/ourTeam.css">
+<body>
+  <nav>
+    <div class="toggle">
+        <i class="fa fa-bars menu" aria-hidden="true"></i>
+    </div>
+    <div class ="menu-bar">
+        <ul>
+            <li class ="active"> <a href ="/"><i class="fa fa-home">Home</i> </a> </li>
+            <li><a href ="aboutUs"><i class="fa fa-user"></i>AboutUs</a></li>
+            <li><a href ="ourTeam">ourTeam</a> </li>
+            <li><a href ="contactUs"><i class="fa fa-phone"></i>contactUs</a></li>
+        </ul>
+    </div>
+</nav>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type ="text/javascript">
+$(document).ready(function(){
+$('.menu').click(function(){
+$('ul').toggleClass('active');
+})
+})
+</script>
+<div class="wrapper">
+  <h1>Our Team</h1>
+  <div class="team">
+    <div class="team_member">
+      <div class="team_img">
+        <img src="/images/ourTeamImages/team1.png" alt="Team_image">
+      </div>
+      <h3>Prince Agrawal</h3>
+      <p class="role">Full Stack Developer</p>
+      <p>I developed the frontEnd as well as backEnd both . I developed backEnd with the help of node js and frontEnd with the help of html , css .</p>
+    </div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="/images/ourTeamImages/team2.png" alt="Team_image">
+      </div>
+      <h3>Harshit Gupta</h3>
+      <p class="role">Full Stack Developer</p>
+      <p>I developed the frontEnd as well as backEnd both . I developed backEnd with the help of node js and frontEnd with the help of html , css .</p></div>
+    <!-- <div class="team_member">
+      <div class="team_img">
+        <img src="/images/ourTeamImages/team3.png" alt="Team_image">
+      </div>
+      <h3>Alex Wood</h3>
+      <p class="role">Support Lead</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+    </div> -->
+  </div>
+</div>	
+
+</body>
+</html>
